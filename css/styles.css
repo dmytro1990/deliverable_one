@@ -1,0 +1,117 @@
+
+/* @media screen and (min-width: 768px) { */
+
+body, html {
+    height: 100%;
+    margin: 10px;
+  }
+  body { 
+    background: #F0ECEE;
+    background-image: url("/Users/dimasiknapasik/Desktop/[iavorskyi]-part-one/Front-End Deliverable 1 Files (Style Guide, Images, and Designs)-20190523/bulldog.jpg");
+    background-position: center;
+    background-size: cover;
+    /* background-image: url("bulldog.jpg") */
+  }
+
+  #adopt {
+    justify-self: flex-start;
+    margin-right: auto;
+  }
+
+  .nav{
+    list-style: none;
+    font-family: 'Fira Sans';
+    text-decoration-color: #88898B;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-items: flex-end;
+  }
+
+  .nav li {
+    margin-right: 10px;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: #88898B;
+  }
+
+  .contact a {
+    color: #F0ECEE;
+    background-color: #FF4850;
+    padding: 15px 5px;;
+    border-radius: 7px; 
+    text-align: center;    
+  }
+  .contact :hover{
+    display: inline-block;
+    background-color: #CCC;
+  }
+  .bottom a{
+    display: inline-block;
+    font-family: 'Fira Sans';
+    background-color: #FF4850;
+    color: #F0ECEE;
+    padding: 15px 50px;
+    border-radius: 7px; 
+    text-align: center;
+  }
+  .bottom :hover{
+    display: inline-block;
+    background-color: #CCC;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  .text {
+    color:#88898B;
+    font-weight: 400; 
+    font-family: 'Fira Sans';
+  }
+  .title {
+    font-family: 'Fira Sans';
+    font-weight: 600; 
+    margin-top: 200px;
+  }
+  .adopt{color: #FF4850;}
+  .me {color: #FF4850;}
+
+  .main {
+    padding: 0px;
+    margin: 0px;
+  }
+/* ==========================================================================   
+ I couldnt make mobile first display properly, so I did it this  way instead, 
+ at least to show changing styles at 768px. otherwise I would use "min-width" 
+ property on top of the sheet. 
+============================================================================*/
+  @media screen and (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+      }
+    .contact a{
+      max-width:600px !important;
+      width:100% !important;
+      display:inline-block !important;
+      font-weight:300 !important;
+      background-color: #FF4850;
+      color: white;
+      text-align: center;
+      } 
+      
+
+    .bottom a{
+        display:block !important;
+        font-size:18px !important;
+
+      }
+    body {
+      background: none;
+      background-color: #F0ECEE;
+     }
+    }
+   
+
+
